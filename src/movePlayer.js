@@ -7,5 +7,3 @@ export function movePlayer(direction) {
     }, 1000);
   });
 }
-
-movePlayer("left").then(() => console.log("Test complete: player has moved"));
