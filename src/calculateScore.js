@@ -1,13 +1,25 @@
+console.log("fady");
 
-console.log("fady")
-export function calculateScore() {
+export function calculateScore(playerActions) {
     return new Promise((resolve) => {
-    console.log("Initializing game...");
-    setTimeout(() => {
-    console.log("Game initialized successfully!");
-    resolve();
-    }, 1000);
+        console.log("Calculating score...");
+        
+        setTimeout(() => {
+            let score = playerActions.reduce((total, action) => total + action.points, 0);
+            
+            console.log(`Score calculated: ${score}`);
+            resolve(score);
+        }, 1000);
     });
-    }
-    
-    calculateScore().then(() => console.log("Test complete:calculateScore"));
+}
+
+
+const playerActions = [
+    { action: "jump", points: 10 },
+    { action: "collect coin", points: 20 },
+    { action: "defeat enemy", points: 30 }
+];
+
+// calculateScore(playerActions).then((score) => {
+//     console.log(`Test complete: calculateScore - Final Score: ${score}`);
+// });
