@@ -1,0 +1,21 @@
+{
+  "name": "session-10-game-activity",
+  "version": "1.0.0",
+  "description": "hello",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usefproj/session-10-game-activity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/usefproj/session-10-game-activity/issues"
+  },
+  "homepage": "https://github.com/usefproj/session-10-game-activity#readme"
+}
