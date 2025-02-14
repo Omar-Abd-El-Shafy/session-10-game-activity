@@ -10,4 +10,4 @@ function calculateScore(events) {
     
     initializeGame().then(() => console.log("Test complete: initializeGame"));
     // fady_wagdy
-    console.log
+    console.log("fady")
