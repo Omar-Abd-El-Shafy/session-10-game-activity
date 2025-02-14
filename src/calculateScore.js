@@ -1,13 +1,13 @@
-function calculateScore(events) {
+
+console.log("fady")
+export function calculateScore() {
     return new Promise((resolve) => {
-        setTimeout(() => {
-            let score = events.length * 10;
-            console.log(`Score calculated: ${score}`);
-            resolve(score);
-        }, 1000);
+    console.log("Initializing game...");
+    setTimeout(() => {
+    console.log("Game initialized successfully!");
+    resolve();
+    }, 1000);
     });
-}
+    }
     
-    initializeGame().then(() => console.log("Test complete: initializeGame"));
-    // fady_wagdy
-    console.log("fady")
+    calculateScore().then(() => console.log("Test complete:calculateScore"));
